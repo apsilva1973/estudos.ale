@@ -1,0 +1,91 @@
+h1{
+  font-style: italic;
+}
+
+h2{
+  font-style: italic;
+  color: currentColor;  
+  margin: 30px 60px; 
+}
+
+#fundo{
+  background-color: #a3a9fa;
+}
+.paragrafo{
+  color: red;
+}
+.paragrafo2{
+  color: #0018ff;
+}
+
+.payment-methods {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.payment-methods:after {
+  content: "";
+  clear: both;
+}
+
+.payment-method {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  float: left;
+  height: 70px;
+  position: relative;
+  width: 100px;
+}
+
+.payment-method + .payment-method {
+  margin-left: 25px;
+}
+ 
+
+
+.payment-method label {
+  background: #fff no-repeat center center;
+  bottom: 1px;
+  cursor: pointer;
+  display: block;
+  font-size: 0;
+  left: 1px;
+  position: absolute;
+  right: 1px;
+  text-indent: 100%;
+  top: 1px;
+  white-space: nowrap;
+}
+
+.pagseguro label {
+  background-image: url(uol.png);
+}
+
+.paypal label {
+  background-image: url(paypal.png);
+}
+
+.bankslip label {
+  background-image: url(bankslip.png);
+}
+ 
+
+.payment-methods input:focus + label {
+  outline: 2px dotted #21b4d0;
+}
+
+.payment-methods input:checked + label {
+  outline: 4px solid #21b4d0;
+}
+
+.payment-methods input:checked + label:after {
+  background: url(checked.png);
+  bottom: -10px;
+  content: "";
+  display: inline-block;
+  height: 20px;
+  position: absolute;
+  right: -10px;
+  width: 20px;
+}

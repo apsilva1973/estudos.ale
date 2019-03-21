@@ -1,0 +1,15 @@
+.container {
+ background: #DDD !important;
+ margin: 10px 10px !important;  
+}
+
+.container form
+{
+
+	display: inline-block; 
+                width: 500px; 
+                height: 200px; 
+                margin: 6px; 
+                border: 3px
+                background-color: #DCDCDC;
+}
